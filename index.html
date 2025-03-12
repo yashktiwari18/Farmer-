@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Farmers Market</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#farmers">Farmers</a></li>
+                    <li><a href="#buyers">Buyers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn login">Login</a>
+                <a href="#" class="btn signup">Sign Up</a>
+                <button id="theme-toggle">🌙 Dark Mode</button> <!-- Light/Dark Toggle-->
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+        <button type="submit">Search</button>
+    </div>
+    
+    <div class="container">
+        <div class="section" id="farmers">
+            <h2><i class="fas fa-tractor"></i> For Farmers</h2>
+            <!-- <p>Grow your business by selling directly to local buyers. Register now and list your fresh produce easily.</p>
+            <ul>
+                <li>Easy registration process</li>
+                <li>Sell directly to customers</li>
+                <li>Better pricing and no middlemen</li>
+            </ul> -->
+            <a href="register.html?type=farmer" class="btn">Register as Farmer</a>
+        </div>
+        <div class="section" id="buyers">
+            <h2><i class="fas fa-shopping-basket"></i> For Buyers</h2>
+            <!-- <p>Get fresh and organic farm products directly from farmers. No middlemen, only quality products.</p>
+            <ul>
+                <li>Browse fresh products</li>
+                <li>Direct farm-to-table supply</li>
+                <li>Support local farmers</li>
+            </ul> -->
+            <a href="register.html?type=buyer" class="btn">Register as Buyer</a>
+
+        </div>
+    </div>
+    
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list" id="product-list">
+            <!-- Products dynamically add honge -->
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works?</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="icon"><i class="fas fa-user-plus"></i></div>
+                <h3>Register</h3>
+                <p>Farmers and buyers sign up to start using the platform.</p>
+            </div>
+            <div class="step">
+                <div class="icon"><i class="fas fa-seedling"></i></div>
+                <h3>List Your Products</h3>
+                <p>Farmers upload their fresh produce for buyers to browse.</p>
+            </div>
+            <div class="step">
+                <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>Buy Fresh</h3>
+                <p>Buyers select and purchase directly from farmers.</p>
+            </div>
+            <div class="step">
+                <div class="icon"><i class="fas fa-truck"></i></div>
+                <h3>Get Delivered</h3>
+                <p>Fast & secure delivery ensures fresh produce at your doorstep.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Fresh & Organic</h3>
+                <p>Direct from farm to your home. No chemicals, no middlemen!</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rupee-sign"></i>
+                <h3>Best Prices</h3>
+                <p>Farmers get fair profits, and buyers get affordable prices.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Transactions</h3>
+                <p>Safe payments & verified users for a hassle-free experience.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated team is available anytime to assist you.</p>
+            </div>
+        </div>
+    </section>
+    
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Farmers Market is a platform connecting local farmers with buyers, ensuring fresh and organic products.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#farmers">Farmers</a></li>
+                <li><a href="#buyers">Buyers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: yashktiwari2003@gmail.com</p>
+            <p>Phone: +91 9973223967</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Farmers Market. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
