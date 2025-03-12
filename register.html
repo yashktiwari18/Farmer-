@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Farmers Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <h1 class="logo">Farmers Market</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#farmers">Farmers</a></li>
+                <li><a href="index.html#buyers">Buyers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="registration-buttons">
+    <button onclick="showForm('farmer')">Register as Farmer</button>
+    <button onclick="showForm('buyer')">Register as Buyer</button>
+</div>
+
+<section class="registration">
+    <div class="registration-container">
+        <div class="form-box" id="farmer-form">
+            <h2>Register as a Farmer</h2>
+            <form id="farmer-register-form">
+                <input type="text" id="farmer-name" placeholder="Name" required>
+                <input type="number" id="farmer-age" placeholder="Age" required>
+                <input type="text" id="farmer-aadhar" placeholder="Aadhar Number" required>
+                <input type="text" id="farmer-location" placeholder="Location" required>
+                <input type="text" id="farmer-contact" placeholder="Contact Details" required>
+                <input type="text" id="farmer-plot" placeholder="Plot Details" required>
+                <input type="email" id="farmer-email" placeholder="Email" required>
+                <input type="password" id="farmer-password" placeholder="Password" required>
+            
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div class="form-box" id="buyer-form">
+            <h2>Register as a Buyer</h2>
+            <form id="buyer-register-form">
+                <input type="text" id="buyer-name" placeholder="Name" required>
+                <input type="number" id="buyer-age" placeholder="Age" required>
+                <input type="text" id="buyer-aadhar" placeholder="Aadhar Number" required>
+                <input type="text" id="buyer-location" placeholder="Location" required>
+                <input type="text" id="buyer-contact" placeholder="Contact Details" required>
+                <input type="email" id="farmer-email" placeholder="Email" required>
+                <input type="password" id="farmer-password" placeholder="Password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
